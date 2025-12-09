@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FFmpeg  UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>FFmpeg UI</h1>
+
+    <div class="input-row">
+      <label>选择视频文件：</label>
+      <input type="file" id="videoInput">
+    </div>
+
+    <video id="player" controls></video>
+
+    <div class="trim-controls">
+      <label>Start (ss):</label>
+      <input type="text" id="start" placeholder="00:00:00">
+
+      <label>Duration (t):</label>
+      <input type="text" id="duration" placeholder="00:01:00">
+
+      <button id="exportBtn">导出剪辑</button>
+    </div>
+
+    <div id="log"></div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
